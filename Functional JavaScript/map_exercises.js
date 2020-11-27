@@ -44,3 +44,20 @@ Object.keys(character).map(key => {
 })
 
 
+// 4. Write a map function that prints the name: even|odd
+const awayTeam = ["Picard", "Riker", "Troy", "Data"]
+
+// your code
+
+
+let even_or_odd = (awayTeam) => awayTeam.map(el => {
+  if (el.length % 2 == 0) {
+      return  `${el}: even`
+  }else {
+     return  `${el}: odd`
+  }
+})
+
+console.log(even_or_odd(awayTeam))
+// expected output: Array: ["Picard: even", "Riker: odd", etc...]
+
