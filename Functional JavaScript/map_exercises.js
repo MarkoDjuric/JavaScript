@@ -71,7 +71,7 @@ createArray = (el, index) => {
   return [el, index]
 }
 
-var multiarray = (sci_fi_shows) => sci_fi_shows.map((el, index)=> createArray(el, index));
+let multiarray = (sci_fi_shows) => sci_fi_shows.map((el, index)=> createArray(el, index));
 
 
 multiarray(sci_fi_shows)
