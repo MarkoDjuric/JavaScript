@@ -61,3 +61,21 @@ let even_or_odd = (awayTeam) => awayTeam.map(el => {
 console.log(even_or_odd(awayTeam))
 // expected output: Array: ["Picard: even", "Riker: odd", etc...]
 
+
+
+// 5. Create a multidimensional array of each item and its index in the original Array.
+
+const sci_fi_shows = ['Manedlorian', 'Enterprise', 'Firefly', 'Battlestar Galactica']
+
+createArray = (el, index) => {
+  return [el, index]
+}
+
+var multiarray = (sci_fi_shows) => sci_fi_shows.map((el, index)=> createArray(el, index));
+
+
+multiarray(sci_fi_shows)
+
+// expected output: Array [['Manedlorian', 0], ['Enterprise', 1], ['Firefly', 2], ['Battlestar Galactica', 3]]
+
+
