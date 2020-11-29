@@ -157,3 +157,13 @@ hunters.filter(el => el.status == 'active')
 //         status: 'active',
 //     },
 // ]
+
+
+// 1. Take this disjointed sentence and turn it into a single string
+const text = ['The ships', 'hung in the sky,', 'much the way', 'that bricks don`t']
+
+// Your Code Here
+text.reduce((total, tempValue) => total + tempValue)
+
+// expected output: "The ships hung in the sky, much the way that bricks don't"
+
