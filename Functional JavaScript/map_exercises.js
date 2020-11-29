@@ -101,3 +101,10 @@ const words = ['tardis', 'grok', 'frak', 'blaster', 'klingon', 'shepherd']
 words.filter(el => el.length > 7)
 // expected output: Array ['shepherd']
 
+
+// 2. Find all even values
+const words = [12, 13, 14, 15, 16, 17]
+
+// Your Code
+words.filter(el => el % 2 == 0)
+// expected output: Array [12, 14, 16]
