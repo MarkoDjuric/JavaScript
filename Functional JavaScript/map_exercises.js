@@ -167,3 +167,32 @@ text.reduce((total, tempValue) => total + tempValue)
 
 // expected output: "The ships hung in the sky, much the way that bricks don't"
 
+// 2. Return the winning team
+const scores = [
+    {
+        team: 'A',
+        score: 20
+    },
+    {
+        team: 'B',
+        score: 17
+    },
+    {
+        team: 'C',
+        score: 23
+    },
+    {
+        team: 'D',
+        score: 13
+    }
+]
+
+const high = scores.reduce((highValue, currentValue) => {
+   if (currentValue.score > highValue.score)
+     return currentValue;
+   else
+     return highValue;
+})
+
+console.log(high.team)
+
