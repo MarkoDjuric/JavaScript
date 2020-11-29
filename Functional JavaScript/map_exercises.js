@@ -92,3 +92,12 @@ var index = [
 var mapedObject = (index) => index.map(el => [el.id.slice(0,3), el.value])
 
 mapedObject(index)
+
+
+// 1. Find all the words with more than 7 characters
+const words = ['tardis', 'grok', 'frak', 'blaster', 'klingon', 'shepherd']
+
+// Your Code
+words.filter(el => el.length > 7)
+// expected output: Array ['shepherd']
+
