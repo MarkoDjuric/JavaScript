@@ -54,3 +54,29 @@ const admins = [
 
 console.log(admins.includes(currentUserId))
 // ----------------------------------------------------------
+
+
+// 2. Checking between lists. Another thing that you might need to do in real life is check items between two arrays. Check if array B has any values that are also in array A. This becomes especially helpful when the values are hard to distinguish visually
+
+const A = [
+    '02398cn7syap0dmbnv0',
+    '2389sakvjhw8e7f09fv',
+    '09mxvb82kzjd6v1sfdg',
+    '9a76zxmsdnv1u622345',
+    '29nv283bfc0szn16723',
+    '029834zmnv9jhgfu2ab',
+    '12mnz09v87bas78fb12',
+    '098Xc8x76m3nb4aposi'
+]
+
+const B = [
+    '13xnse8aanv87Hdnfv8',
+    '2389sakvjhw8e7f09fv',
+    '12mn0vnZkadfh237LPd',
+    '1209MNBd8723nvkwejs',
+    '298374naskdj273ubsl',
+    '098LKJnsvijevkwejf6'
+]
+
+console.log(A.filter(el => B.includes(el)))
+
