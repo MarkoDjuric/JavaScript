@@ -32,3 +32,25 @@ const ids = [
 ]
 
 var findStr = ids.find(el => el.includes("ABC"))
+
+
+// ----------------------------------------------------------
+// INCLUDE EXERCISES
+// ----------------------------------------------------------
+// 1. It best to use INCLUDES when what the value is does not matter, simply its presence. Imagine the scenario that you are need to check a user's id against a list of admin id's.
+
+const currentUserId = '29nv283bfc0szn16723'
+
+const admins = [
+    '02398cn7syap0dmbnv0',
+    '2389sakvjhw8e7f09fv',
+    '09mxvb82kzjd6v1sfdg',
+    '9a76zxmsdnv1u622345',
+    '29nv283bfc0szn16723',
+    '029834zmnv9jhgfu2ab',
+    '12mnz09v87bas78fb12',
+    '098Xc8x76m3nb4aposi'
+]
+
+console.log(admins.includes(currentUserId))
+// ----------------------------------------------------------
